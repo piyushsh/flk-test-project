@@ -1,0 +1,9 @@
+.open
+{
+    color:green;
+    text-transform: uppercase;
+}
+.closed{
+    color:red;
+    text-transform: uppercase;
+}

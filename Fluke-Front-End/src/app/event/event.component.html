@@ -1,0 +1,38 @@
+<div *ngIf="event$ | async as eventData">
+    <h3>Event Details - {{eventData.id}}</h3>
+    <hr>
+    <div class="row" >
+        <div class="col-xs-4">
+            Title
+        </div>
+        <div class="col-xs-6">
+            {{eventData.title}}
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-xs-4">
+            Description
+        </div>
+        <div class="col-xs-6">
+            {{eventData.description}}
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-xs-4">
+            Link
+        </div>
+        <div class="col-xs-6">
+            {{eventData.link}}
+        </div>
+    </div>
+    <div class="row" >
+        <div class="col-xs-4">
+            Status
+        </div>
+        <div class="col-xs-6" [ngClass]="eventData.status">
+            {{eventData.status}}
+        </div>
+    </div>
+    <hr />
+    <button routerLink="/events" class="btn btn-primary">Go Back</button>
+</div>

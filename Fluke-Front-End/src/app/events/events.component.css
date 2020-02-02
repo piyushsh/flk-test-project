@@ -1,0 +1,13 @@
+tr.closed{
+    background-color: gainsboro;
+    color:lightgrey;
+}
+
+tr.closed a{
+    color:lightgrey;
+}
+
+input[type="date"]
+{
+    width:70%;
+}
